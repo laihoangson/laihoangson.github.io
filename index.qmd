@@ -1,5 +1,15 @@
 ---
-title: "Personal Website"
+title: "Hoang Son Lai"
+image: "files/profile_pic.jpg"
+about:
+  template: jolla
+  links:
+    - icon: envelope
+      href: mailto:lson21757@gmail.com
+    - icon: linkedin
+      href: https://www.linkedin.com/in/hoang-son-lai-92ab19282/
+    - icon: github
+      href: https://github.com/laihoangson
 ---
 
 Hello, this is Hoang Son Lai.  
