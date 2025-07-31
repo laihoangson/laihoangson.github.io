@@ -7,5 +7,11 @@
   },
   "cv.qmd": {
     "cv.html": "c796a960"
+  },
+  "resume.qmd": {
+    "resume.html": "3a24b6de"
+  },
+  "projects.qmd": {
+    "projects.html": "349f24e8"
   }
 }
