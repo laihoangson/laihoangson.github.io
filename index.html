@@ -90,12 +90,17 @@
     </script>
 
     <style>
-        html, body { 
+        /* Sửa lỗi tràn viền ngang trên điện thoại */
+        html {
+            overflow-x: hidden !important;
+            width: 100%;
+        }
+        body { 
             background-color: #f8fafc; 
             color: #0f172a; 
-            overflow-x: hidden; 
+            overflow-x: hidden !important; 
             width: 100%;
-            max-width: 100vw;
+            position: relative;
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         
@@ -134,7 +139,7 @@
             animation: float 20s infinite ease-in-out alternate;
         }
 
-        /* Hologram Overlay Effect */
+        /* Hologram Overlay Effect - Hạ z-index xuống 0 để không đè lên content/navbar */
         .hologram-overlay {
             position: fixed;
             top: 0;
@@ -142,7 +147,7 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 9999;
+            z-index: 0;
             background: repeating-linear-gradient(
                 0deg,
                 rgba(79, 70, 229, 0.02) 0px,
@@ -161,7 +166,7 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 9998;
+            z-index: 0;
             background-image: 
                 linear-gradient(rgba(79, 70, 229, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(14, 165, 233, 0.03) 1px, transparent 1px);
@@ -176,7 +181,7 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 9997;
+            z-index: 0;
             background: radial-gradient(circle at 30% 50%, rgba(79, 70, 229, 0.02) 0%, transparent 50%),
                         radial-gradient(circle at 70% 30%, rgba(14, 165, 233, 0.02) 0%, transparent 50%),
                         radial-gradient(circle at 50% 70%, rgba(139, 92, 246, 0.02) 0%, transparent 50%);
@@ -192,7 +197,7 @@
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: 9996;
+            z-index: 0;
             background: repeating-linear-gradient(
                 90deg,
                 transparent,
@@ -203,7 +208,7 @@
             animation: float 8s linear infinite;
         }
 
-        /* Gradient Text - Đồng bộ màu cho tất cả các title */
+        /* Gradient Text */
         .text-gradient {
             background: linear-gradient(135deg, #4f46e5, #0ea5e9, #8b5cf6);
             -webkit-background-clip: text;
@@ -212,7 +217,6 @@
             animation: gradient-shift 8s ease infinite;
         }
 
-        /* Đồng bộ màu cho các section titles */
         .section-title-primary {
             background: linear-gradient(135deg, #4f46e5, #0ea5e9);
             -webkit-background-clip: text;
@@ -304,7 +308,7 @@
         }
     </style>
 </head>
-<body class="antialiased selection:bg-primary selection:text-white relative overflow-x-hidden max-w-[100vw]">
+<body class="antialiased selection:bg-primary selection:text-white relative">
 
     <div class="hologram-overlay"></div>
     <div class="hologram-grid"></div>
@@ -351,7 +355,7 @@
         </div>
     </nav>
 
-    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-xl z-[10001] hidden flex-col items-center justify-center gap-6 text-xl font-bold opacity-0 translate-x-full transition-all duration-500">
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[10001] hidden flex-col items-center justify-center gap-6 text-xl font-bold opacity-0 translate-x-full transition-all duration-500">
         <a href="#home" class="text-slate-800 hover:text-primary transition-colors mobile-link">Home</a>
         <a href="#skills" class="text-slate-800 hover:text-primary transition-colors mobile-link">Skills</a>
         <a href="#work-experience" class="text-slate-800 hover:text-primary transition-colors mobile-link">Experience</a>
@@ -935,17 +939,17 @@
             isMenuOpen = !isMenuOpen;
             if (isMenuOpen) {
                 mobileMenu.classList.remove('hidden');
-                // Nhỏ timeout để transition CSS bắt kịp
+                // Tăng timeout lên 50ms để fix triệt để lỗi Safari không kịp load giao diện trước khi trượt animation
                 setTimeout(() => {
                     mobileMenu.classList.remove('opacity-0', 'translate-x-full');
-                }, 10);
+                }, 50);
                 mobileMenuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-                document.body.style.overflow = 'hidden'; // Khóa cuộn trang khi mở menu
+                document.body.style.overflow = 'hidden'; 
             } else {
                 mobileMenu.classList.add('opacity-0', 'translate-x-full');
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
-                }, 500); // Đợi transition kết thúc
+                }, 500); 
                 mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
                 document.body.style.overflow = '';
             }
