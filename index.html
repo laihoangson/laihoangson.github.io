@@ -139,7 +139,7 @@
             animation: float 20s infinite ease-in-out alternate;
         }
 
-        /* Hologram Overlay Effect - Hạ z-index xuống 0 để không đè lên content/navbar */
+        /* Hologram Overlay Effect */
         .hologram-overlay {
             position: fixed;
             top: 0;
@@ -326,7 +326,7 @@
     <div class="glow-orb bg-violet-300/30 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bottom-[10%] left-[5%] md:left-[10%]" style="animation-delay: 6s;"></div>
     <div class="glow-orb bg-pink-300/20 w-[200px] md:w-[400px] h-[200px] md:h-[400px] bottom-[30%] right-[10%] md:right-[20%]" style="animation-delay: 9s;"></div>
 
-    <nav class="fixed w-full z-[10002] glass-panel py-4 transition-all duration-500" id="navbar">
+    <nav class="hidden lg:block fixed w-full z-[10002] glass-panel py-4 transition-all duration-500" id="navbar">
         <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
             <a href="#" class="text-xl md:text-2xl font-extrabold text-slate-800 flex items-center gap-2 group z-[10002]">
                 <div class="relative">
@@ -348,26 +348,10 @@
             <a href="https://drive.google.com/file/d/16xSCWCeb6oA_izgbuUKA8k0Hj4OQn4qr/view?usp=sharing" target="_blank" class="hidden lg:inline-flex items-center justify-center px-6 py-2.5 bg-gradient-to-r from-primary via-secondary to-accent text-white rounded-full font-bold hover:from-accent hover:via-secondary hover:to-primary transition-all duration-500 shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-accent/40 hover:scale-105 group bg-300% animate-gradient-xy">
                 <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i> Resume
             </a>
-            
-            <button class="lg:hidden text-slate-800 hover:text-primary text-2xl z-[10002] transition-transform" id="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
         </div>
     </nav>
 
-    <div id="mobile-menu" class="fixed inset-0 bg-white z-[10001] hidden flex-col items-center justify-center gap-6 text-xl font-bold opacity-0 translate-x-full transition-all duration-500">
-        <a href="#home" class="text-slate-800 hover:text-primary transition-colors mobile-link">Home</a>
-        <a href="#skills" class="text-slate-800 hover:text-primary transition-colors mobile-link">Skills</a>
-        <a href="#work-experience" class="text-slate-800 hover:text-primary transition-colors mobile-link">Experience</a>
-        <a href="#education" class="text-slate-800 hover:text-primary transition-colors mobile-link">Education</a>
-        <a href="#projects" class="text-slate-800 hover:text-primary transition-colors mobile-link">Projects</a>
-        <a href="#certificates" class="text-slate-800 hover:text-primary transition-colors mobile-link">Certificates</a>
-        <a href="https://drive.google.com/file/d/16xSCWCeb6oA_izgbuUKA8k0Hj4OQn4qr/view?usp=sharing" target="_blank" class="mt-4 px-8 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-full shadow-lg shadow-primary/30 mobile-link">
-            <i class="fa-solid fa-download mr-2"></i> Download Resume
-        </a>
-    </div>
-
-    <section id="home" class="min-h-screen flex items-center relative pt-24 md:pt-20 overflow-hidden">
+    <section id="home" class="min-h-screen flex items-center relative pt-16 lg:pt-24 md:pt-20 overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center z-10 w-full">
             <div data-aos="fade-right" data-aos-duration="1200" data-aos-easing="ease-out-cubic" class="text-center lg:text-left mt-10 lg:mt-0">
                 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/70 border border-slate-200 text-slate-600 font-medium text-xs md:text-sm mb-6 shadow-lg backdrop-blur-sm hover:border-primary/50 transition-all duration-300 group mx-auto lg:mx-0">
@@ -390,20 +374,22 @@
                     Master of Business Analytics candidate at Monash University and CFA Level 1. I combine deep finance expertise with hands-on data modelling to automate workflows and drive actionable business intelligence.
                 </p>
                 
-                <div class="flex flex-wrap justify-center lg:justify-start gap-4 mb-10">
-                    <a href="mailto:Ison21757@gmail.com" class="relative w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-md flex items-center justify-center text-xl text-slate-600 hover:text-white hover:border-primary group overflow-hidden transition-all duration-300 hover:-translate-y-1">
-                        <div class="absolute inset-0 bg-primary scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></div>
-                        <i class="fa-solid fa-envelope relative z-10 group-hover:text-white"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hoang-son-lai-92ab19282/" target="_blank" class="relative w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-md flex items-center justify-center text-xl text-slate-600 hover:text-white group overflow-hidden transition-all duration-300 hover:-translate-y-1">
-                        <div class="absolute inset-0 bg-[#0077b5] scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full border-[#0077b5]"></div>
-                        <i class="fa-brands fa-linkedin-in relative z-10 group-hover:text-white"></i>
-                    </a>
-                    <a href="https://github.com/laihoangson" target="_blank" class="relative w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-md flex items-center justify-center text-xl text-slate-600 hover:text-white group overflow-hidden transition-all duration-300 hover:-translate-y-1">
-                        <div class="absolute inset-0 bg-slate-900 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full border-slate-900"></div>
-                        <i class="fa-brands fa-github relative z-10 group-hover:text-white"></i>
-                    </a>
-                    <a href="https://drive.google.com/file/d/16xSCWCeb6oA_izgbuUKA8k0Hj4OQn4qr/view?usp=sharing" target="_blank" class="relative px-6 py-2.5 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold group overflow-hidden shadow-xl shadow-primary/30 hover:shadow-accent/40 transition-all duration-300 hover:-translate-y-1 lg:hidden">
+                <div class="flex flex-col items-center lg:items-start gap-5 mb-10">
+                    <div class="flex justify-center lg:justify-start gap-4">
+                        <a href="mailto:Ison21757@gmail.com" class="relative w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-md flex items-center justify-center text-xl text-slate-600 hover:text-white hover:border-primary group overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                            <div class="absolute inset-0 bg-primary scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full"></div>
+                            <i class="fa-solid fa-envelope relative z-10 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hoang-son-lai-92ab19282/" target="_blank" class="relative w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-md flex items-center justify-center text-xl text-slate-600 hover:text-white group overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                            <div class="absolute inset-0 bg-[#0077b5] scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full border-[#0077b5]"></div>
+                            <i class="fa-brands fa-linkedin-in relative z-10 group-hover:text-white"></i>
+                        </a>
+                        <a href="https://github.com/laihoangson" target="_blank" class="relative w-12 h-12 rounded-full bg-white border-2 border-slate-200 shadow-md flex items-center justify-center text-xl text-slate-600 hover:text-white group overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                            <div class="absolute inset-0 bg-slate-900 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full border-slate-900"></div>
+                            <i class="fa-brands fa-github relative z-10 group-hover:text-white"></i>
+                        </a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/16xSCWCeb6oA_izgbuUKA8k0Hj4OQn4qr/view?usp=sharing" target="_blank" class="lg:hidden w-48 text-center relative px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-bold group overflow-hidden shadow-xl shadow-primary/30 hover:shadow-accent/40 transition-all duration-300 hover:-translate-y-1">
                         <span class="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 shimmer"></span>
                         <i class="fa-solid fa-download mr-2 group-hover:animate-bounce"></i> Resume
                     </a>
@@ -917,7 +903,7 @@
             smartBackspace: true,
         });
 
-        // Navbar effect on scroll
+        // Navbar effect on scroll (Chỉ chạy trên Desktop do đã ẩn Nav trên Mobile)
         window.addEventListener('scroll', function() {
             const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
@@ -927,41 +913,6 @@
                 navbar.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-xl', 'py-3');
                 navbar.classList.add('bg-white/75', 'py-4');
             }
-        });
-
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-        let isMenuOpen = false;
-
-        function toggleMenu() {
-            isMenuOpen = !isMenuOpen;
-            if (isMenuOpen) {
-                mobileMenu.classList.remove('hidden');
-                // Tăng timeout lên 50ms để fix triệt để lỗi Safari không kịp load giao diện trước khi trượt animation
-                setTimeout(() => {
-                    mobileMenu.classList.remove('opacity-0', 'translate-x-full');
-                }, 50);
-                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-                document.body.style.overflow = 'hidden'; 
-            } else {
-                mobileMenu.classList.add('opacity-0', 'translate-x-full');
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 500); 
-                mobileMenuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
-                document.body.style.overflow = '';
-            }
-        }
-
-        mobileMenuBtn.addEventListener('click', toggleMenu);
-
-        // Đóng menu khi click vào một link
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if(isMenuOpen) toggleMenu();
-            });
         });
 
         // Smooth scroll for anchor links
