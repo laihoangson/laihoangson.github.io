@@ -338,10 +338,10 @@
             
             <div class="hidden lg:flex gap-8 font-semibold text-slate-600">
                 <a href="#home" class="hover:text-primary transition-colors animated-underline">Home</a>
-                <a href="#skills" class="hover:text-primary transition-colors animated-underline">Skills</a>
+                <a href="#projects" class="hover:text-primary transition-colors animated-underline">Projects</a>
                 <a href="#work-experience" class="hover:text-primary transition-colors animated-underline">Experience</a>
                 <a href="#education" class="hover:text-primary transition-colors animated-underline">Education</a>
-                <a href="#projects" class="hover:text-primary transition-colors animated-underline">Projects</a>
+                <a href="#skills" class="hover:text-primary transition-colors animated-underline">Skills</a>
                 <a href="#certificates" class="hover:text-primary transition-colors animated-underline">Certificates</a>
             </div>
             
@@ -371,7 +371,7 @@
                 </h3>
                 <p class="text-slate-600 text-base md:text-lg mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0 backdrop-blur-sm bg-white/30 p-5 rounded-2xl border border-white/50 shadow-lg text-justify lg:text-left">
                     <i class="fa-solid fa-quote-left text-primary/50 mr-2 text-xl"></i>
-                    Master of Business Analytics candidate at Monash University and CFA Level 1. I combine deep finance expertise with hands-on data modelling to automate workflows and drive actionable business intelligence.
+                    Master of Business Analytics at Monash University and CFA Level 1. I combine deep finance expertise with hands-on data modelling and analyzing to automate workflows and drive actionable business intelligence.
                 </p>
                 
                 <div class="flex flex-col items-center lg:items-start gap-5 mb-10">
@@ -485,61 +485,80 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 md:py-24 relative z-10">
-        <div class="max-w-7xl mx-auto px-6 md:px-12">
-            <div class="mb-12 md:mb-16 text-center lg:text-left" data-aos="fade-up" data-aos-duration="1000">
-                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-slate-900">My <span class="section-title-primary">Skillset</span></h1>
-                <p class="text-lg md:text-xl text-slate-500">Technical skills & tools I use to deliver data-driven solutions.</p>
+    <section id="projects" class="py-20 md:py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-slate-100/50 skew-y-2 origin-top-right -z-10"></div>
+        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+            <div class="mb-16 text-center" data-aos="fade-up">
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-slate-900">My <span class="section-title-primary">Projects</span></h1>
+                <h2 class="text-lg md:text-xl text-slate-500">Turning theory into functional data pipelines and models.</h2>
+                <div class="w-16 md:w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full"></div>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-6 md:gap-8">
-                <div class="glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden group tilt-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-100 rounded-full blur-3xl group-hover:bg-indigo-200 transition-colors"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center relative z-10">
-                        <span class="w-10 h-10 rounded-xl bg-indigo-100 text-primary flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-sm"><i class="fa-solid fa-code"></i></span> 
-                        Languages
-                    </h3>
-                    <div class="flex flex-wrap gap-2 md:gap-3 relative z-10">
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-python text-blue-500 mr-1"></i> Python</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-r text-blue-600 mr-1"></i> R</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-database text-indigo-500 mr-1"></i> SQL (MySQL, PostgreSQL)</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-js text-yellow-500 mr-1"></i> JavaScript</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-html5 text-orange-500 mr-1"></i> HTML/CSS</span>
+            <div class="grid lg:grid-cols-2 gap-8 md:gap-10">
+                <div class="group bg-white rounded-3xl overflow-hidden block relative border border-slate-200 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-200/50 transition-all duration-700 hover:-translate-y-4 tilt-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                    <a href="https://laihoangson.github.io/financial-analytic/" target="_blank" class="block aspect-[16/9] relative overflow-hidden bg-slate-100 cursor-pointer">
+                        <img src="image/finance.jpg" alt="Global Market Insight" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-600 via-secondary to-accent opacity-90 hidden items-center justify-center group-hover:scale-110 transition-transform duration-700">
+                            <i class="fa-solid fa-chart-line text-7xl text-white/80 drop-shadow-md group-hover:rotate-12 transition-all duration-700"></i>
+                        </div>
+                        
+                        <div class="absolute inset-0 bg-indigo-900/20 group-hover:bg-transparent transition-colors duration-700 pointer-events-none"></div>
+                    </a>
+                    <div class="p-6 md:p-8">
+                        <a href="https://laihoangson.github.io/financial-analytic/" target="_blank" class="block">
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">Global Market Insight (Financial Analytic)</h3>
+                        </a>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+                            An automated ETL pipeline using Python & GitHub Actions to collect structured financial data. Features a robust MySQL database, dynamic JavaScript dashboards for 21 companies, and a predictive stock forecasting report using XGBoost/Scikit-Learn.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-python text-blue-500 mr-1"></i> Python</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-database text-indigo-500 mr-1"></i> MySQL</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-js text-yellow-500 mr-1"></i> JavaScript</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-brain text-pink-500 mr-1"></i> Machine Learning</span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 md:gap-4">
+                            <a href="https://github.com/laihoangson/financial-analytic" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-xs md:text-sm font-bold hover:bg-primary transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1">
+                                <i class="fa-brands fa-github text-lg"></i> Source Code
+                            </a>
+                            <a href="https://laihoangson.github.io/financial-analytic/" target="_blank" class="px-5 py-2.5 bg-white text-slate-800 border-2 border-slate-200 rounded-xl text-xs md:text-sm font-bold hover:border-primary hover:text-primary transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i> Live Site
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden group tilt-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-sky-100 rounded-full blur-3xl group-hover:bg-sky-200 transition-colors"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center relative z-10">
-                        <span class="w-10 h-10 rounded-xl bg-sky-100 text-secondary flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-sm"><i class="fa-solid fa-toolbox"></i></span> 
-                        Tools & Platforms
-                    </h3>
-                    <div class="flex flex-wrap gap-2 md:gap-3 relative z-10">
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-chart-column text-yellow-500 mr-1"></i> Power BI</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-chart-pie text-blue-400 mr-1"></i> Tableau</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-git-alt text-orange-500 mr-1"></i> Git/GitHub</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-flask text-slate-800 mr-1"></i> Flask</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-file-pen text-blue-500 mr-1"></i> Quarto</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-book-journal-whills text-orange-500 mr-1"></i> Jupyter</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-file-excel text-green-600 mr-1"></i> Excel</span>
-                    </div>
-                </div>
+                <div class="group bg-white rounded-3xl overflow-hidden block relative border border-slate-200 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-violet-200/50 transition-all duration-700 hover:-translate-y-4 tilt-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <a href="https://laihoangson.github.io/world-of-games-and-data-2/" target="_blank" class="block aspect-[16/9] relative overflow-hidden bg-slate-100 cursor-pointer">
+                        <img src="image/game.jpg" alt="World of Games and Data" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-br from-violet-600 to-fuchsia-500 opacity-90 hidden items-center justify-center group-hover:scale-110 transition-transform duration-700">
+                            <i class="fa-solid fa-gamepad text-7xl text-white/80 drop-shadow-md group-hover:rotate-12 transition-all duration-700"></i>
+                        </div>
 
-                <div class="glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden group tilt-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-violet-100 rounded-full blur-3xl group-hover:bg-violet-200 transition-colors"></div>
-                    <div class="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center relative z-10">
-                        <span class="w-10 h-10 rounded-xl bg-violet-100 text-accent flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-sm"><i class="fa-solid fa-brain"></i></span> 
-                        Data Analysis & ML
-                    </h3>
-                    <div class="flex flex-wrap gap-2 md:gap-3 relative z-10">
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-magnifying-glass-chart text-violet-500 mr-1"></i> Exploratory Data Analysis</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-chart-line text-violet-500 mr-1"></i> Time-Series Analysis</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-arrow-trend-up text-violet-500 mr-1"></i> Regression</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-tree text-violet-500 mr-1"></i> XGBoost & Random Forest</span>
-                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-filter text-violet-500 mr-1"></i> ETL Pipelines</span>
+                        <div class="absolute inset-0 bg-violet-900/20 group-hover:bg-transparent transition-colors duration-700 pointer-events-none"></div>
+                    </a>
+                    <div class="p-6 md:p-8">
+                        <a href="https://laihoangson.github.io/world-of-games-and-data-2/" target="_blank" class="block">
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 group-hover:text-accent transition-colors">World of Games and Data</h3>
+                        </a>
+                        <p class="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+                            Developed interactive browser games with embedded telemetry to capture real-time user sessions. Built a Python/Flask API backend logging to PostgreSQL. Conducted EDA and applied Random Forest/XGBoost models in R/Quarto for game design optimization.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-python text-blue-500 mr-1"></i> Python/Flask</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-database text-indigo-500 mr-1"></i> PostgreSQL</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-r text-blue-600 mr-1"></i> R/Quarto</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-js text-yellow-500 mr-1"></i> JavaScript</span>
+                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-brain text-pink-500 mr-1"></i> Machine Learning</span>            
+                        </div>
+                        <div class="flex flex-wrap gap-3 md:gap-4">
+                            <a href="https://github.com/laihoangson/world-of-games-and-data-2" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-xs md:text-sm font-bold hover:bg-accent transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-1">
+                                <i class="fa-brands fa-github text-lg"></i> Source Code
+                            </a>
+                            <a href="https://laihoangson.github.io/world-of-games-and-data-2/" target="_blank" class="px-5 py-2.5 bg-white text-slate-800 border-2 border-slate-200 rounded-xl text-xs md:text-sm font-bold hover:border-accent hover:text-accent transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-lg hover:-translate-y-1">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i> Live Site
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -729,84 +748,61 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 md:py-24 relative overflow-hidden">
-        <div class="absolute inset-0 bg-slate-100/50 skew-y-2 origin-top-right -z-10"></div>
-        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-            <div class="mb-16 text-center" data-aos="fade-up">
-                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-slate-900">My <span class="section-title-primary">Projects</span></h1>
-                <h2 class="text-lg md:text-xl text-slate-500">Turning theory into functional data pipelines and models.</h2>
-                <div class="w-16 md:w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full"></div>
+    <section id="skills" class="py-20 md:py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="mb-12 md:mb-16 text-center lg:text-left" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-3xl md:text-5xl font-extrabold mb-4 text-slate-900">My <span class="section-title-primary">Skillset</span></h1>
+                <p class="text-lg md:text-xl text-slate-500">Technical skills & tools I use to deliver data-driven solutions.</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-8 md:gap-10">
-                <div class="group bg-white rounded-3xl overflow-hidden block relative border border-slate-200 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-indigo-200/50 transition-all duration-700 hover:-translate-y-4 tilt-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <div class="aspect-[16/9] relative overflow-hidden bg-slate-100">
-                        <img src="image/finance.jpg" alt="Global Market Insight" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-600 via-secondary to-accent opacity-90 hidden items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                            <i class="fa-solid fa-chart-line text-7xl text-white/80 drop-shadow-md group-hover:rotate-12 transition-all duration-700"></i>
-                        </div>
-                        
-                        <div class="absolute inset-0 bg-indigo-900/20 group-hover:bg-transparent transition-colors duration-700 pointer-events-none"></div>
-                        
-                        <div class="absolute top-4 left-4 z-10">
-                        </div>
-                        <div class="absolute bottom-4 right-4 z-10">
-                        </div>
-                    </div>
-                    <div class="p-6 md:p-8">
-                        <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors">Global Market Insight (Financial Analytic)</h3>
-                        <p class="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                            An automated ETL pipeline using Python & GitHub Actions to collect structured financial data. Features a robust MySQL database, dynamic JavaScript dashboards for 21 companies, and a predictive stock forecasting report using XGBoost/Scikit-Learn.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-python text-blue-500 mr-1"></i> Python</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-database text-indigo-500 mr-1"></i> MySQL</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-js text-yellow-500 mr-1"></i> JavaScript</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-brain text-pink-500 mr-1"></i> Machine Learning</span>
-                        </div>
-                        <div class="flex flex-wrap gap-3 md:gap-4">
-                            <a href="https://github.com/laihoangson/financial-analytic" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-xs md:text-sm font-bold hover:bg-primary transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1">
-                                <i class="fa-brands fa-github text-lg"></i> Source Code
-                            </a>
-                            <a href="https://laihoangson.github.io/financial-analytic/" target="_blank" class="px-5 py-2.5 bg-white text-slate-800 border-2 border-slate-200 rounded-xl text-xs md:text-sm font-bold hover:border-primary hover:text-primary transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-lg hover:-translate-y-1">
-                                <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i> Live Site
-                            </a>
-                        </div>
+            <div class="grid lg:grid-cols-3 gap-6 md:gap-8">
+                <div class="glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden group tilt-card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-100 rounded-full blur-3xl group-hover:bg-indigo-200 transition-colors"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center relative z-10">
+                        <span class="w-10 h-10 rounded-xl bg-indigo-100 text-primary flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-sm"><i class="fa-solid fa-code"></i></span> 
+                        Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-2 md:gap-3 relative z-10">
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-python text-blue-500 mr-1"></i> Python</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-r text-blue-600 mr-1"></i> R</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-database text-indigo-500 mr-1"></i> SQL (MySQL, PostgreSQL)</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-js text-yellow-500 mr-1"></i> JavaScript</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-indigo-300 hover:bg-indigo-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-html5 text-orange-500 mr-1"></i> HTML/CSS</span>
                     </div>
                 </div>
 
-                <div class="group bg-white rounded-3xl overflow-hidden block relative border border-slate-200 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-violet-200/50 transition-all duration-700 hover:-translate-y-4 tilt-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="aspect-[16/9] relative overflow-hidden bg-slate-100">
-                        <img src="image/game.jpg" alt="World of Games and Data" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-br from-violet-600 to-fuchsia-500 opacity-90 hidden items-center justify-center group-hover:scale-110 transition-transform duration-700">
-                            <i class="fa-solid fa-gamepad text-7xl text-white/80 drop-shadow-md group-hover:rotate-12 transition-all duration-700"></i>
-                        </div>
-
-                        <div class="absolute inset-0 bg-violet-900/20 group-hover:bg-transparent transition-colors duration-700 pointer-events-none"></div>
-
-                        <div class="absolute top-4 left-4 z-10">
-                        </div>
+                <div class="glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden group tilt-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-sky-100 rounded-full blur-3xl group-hover:bg-sky-200 transition-colors"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center relative z-10">
+                        <span class="w-10 h-10 rounded-xl bg-sky-100 text-secondary flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-sm"><i class="fa-solid fa-toolbox"></i></span> 
+                        Tools & Platforms
+                    </h3>
+                    <div class="flex flex-wrap gap-2 md:gap-3 relative z-10">
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-chart-column text-yellow-500 mr-1"></i> Power BI</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-chart-pie text-blue-400 mr-1"></i> Tableau</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-brands fa-git-alt text-orange-500 mr-1"></i> Git/GitHub</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-flask text-slate-800 mr-1"></i> Flask</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-file-pen text-blue-500 mr-1"></i> Quarto</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-book-journal-whills text-orange-500 mr-1"></i> Jupyter</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-sky-300 hover:bg-sky-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-file-excel text-green-600 mr-1"></i> Excel</span>
                     </div>
-                    <div class="p-6 md:p-8">
-                        <h3 class="text-xl md:text-2xl font-bold text-slate-900 mb-3 group-hover:text-accent transition-colors">World of Games and Data</h3>
-                        <p class="text-slate-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                            Developed interactive browser games with embedded telemetry to capture real-time user sessions. Built a Python/Flask API backend logging to PostgreSQL. Conducted EDA and applied Random Forest/XGBoost models in R/Quarto for game design optimization.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-8">
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-python text-blue-500 mr-1"></i> Python/Flask</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-database text-indigo-500 mr-1"></i> PostgreSQL</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-r text-blue-600 mr-1"></i> R/Quarto</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-brands fa-js text-yellow-500 mr-1"></i> JavaScript</span>
-                            <span class="px-3 py-1 bg-slate-50 text-slate-600 rounded-lg text-xs font-semibold border border-slate-200"><i class="fa-solid fa-brain text-pink-500 mr-1"></i> Machine Learning</span>                           
-                        </div>
-                        <div class="flex flex-wrap gap-3 md:gap-4">
-                            <a href="https://github.com/laihoangson/world-of-games-and-data-2" target="_blank" class="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-xs md:text-sm font-bold hover:bg-accent transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg hover:shadow-accent/30 hover:-translate-y-1">
-                                <i class="fa-brands fa-github text-lg"></i> Source Code
-                            </a>
-                            <a href="https://laihoangson.github.io/world-of-games-and-data-2/" target="_blank" class="px-5 py-2.5 bg-white text-slate-800 border-2 border-slate-200 rounded-xl text-xs md:text-sm font-bold hover:border-accent hover:text-accent transition-all duration-300 flex items-center gap-2 shadow-sm hover:shadow-lg hover:-translate-y-1">
-                                <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i> Live Site
-                            </a>
-                        </div>
+                </div>
+
+                <div class="glass-card p-6 md:p-8 rounded-3xl relative overflow-hidden group tilt-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-violet-100 rounded-full blur-3xl group-hover:bg-violet-200 transition-colors"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-violet-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center relative z-10">
+                        <span class="w-10 h-10 rounded-xl bg-violet-100 text-accent flex items-center justify-center mr-3 group-hover:rotate-12 transition-transform shadow-sm"><i class="fa-solid fa-brain"></i></span> 
+                        Data Analysis & ML
+                    </h3>
+                    <div class="flex flex-wrap gap-2 md:gap-3 relative z-10">
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-magnifying-glass-chart text-violet-500 mr-1"></i> Exploratory Data Analysis</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-chart-line text-violet-500 mr-1"></i> Time-Series Analysis</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-arrow-trend-up text-violet-500 mr-1"></i> Regression</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-tree text-violet-500 mr-1"></i> XGBoost & Random Forest</span>
+                        <span class="px-3 md:px-4 py-2 bg-white rounded-xl text-xs md:text-sm font-semibold text-slate-700 border border-slate-200 shadow-sm hover:border-violet-300 hover:bg-violet-50 transition-all hover:-translate-y-1"><i class="fa-solid fa-filter text-violet-500 mr-1"></i> ETL Pipelines</span>
                     </div>
                 </div>
             </div>
